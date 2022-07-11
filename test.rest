@@ -1,0 +1,34 @@
+//instead of using the postman to test your apis or endpoint 
+//you can use the rest client instead to test your api
+//the get method request
+  # GET http://localhost:7000/album
+
+#  GET http://localhost:7000/single-data/album/30
+
+  //the post method request
+# Post http://localhost:7000/create
+//to be able insert data you first have to set the header
+//by requiring the content type and giving it the value of application/json
+# in order for it to ouput the information in a json format
+# Content-Type: 'application/json'
+
+# {
+#      "title": "Potter",
+#     "artist": "Jimi Hendrix",
+#      "label": "pop"
+#  }
+
+#the put method
+# Put http://localhost:7000/update/11
+# Content-Type: application/json
+
+# {
+#     "title": "Potter",
+#     "artist": "Jimi Hendrix",
+#     "label": "pops"
+# }
+
+# the delete method
+# DELETE http://localhost:7000/30
+
+# GET http://localhost:7500/
