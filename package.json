@@ -2,9 +2,10 @@
   "name": "mysql",
   "version": "1.0.0",
   "description": "creation of mysql databases using the crud operations",
-  "main": "Js/server.js",
+  "main": "Js/database.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "nodemon database.js",
+    "serve": "nodemon database.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Yasira Musah",

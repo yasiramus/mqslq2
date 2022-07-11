@@ -17,7 +17,7 @@ const PORT = process.env.PORT || 7000;//setting the port number
 const mysqlConnection = mysql2.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'Sira211818@@@',//password of mysql user that is if set provide it else leave the space empty string
+    password: 'Sira211818',//password of mysql user that is if set provide it else leave the space empty string
     database: 'album'//name of database to use for the connection
 });
 

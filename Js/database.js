@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 7500;//setting the port number
 const mysqlConnection = mysql2.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'Sira211818@@@',//password of mysql user that is if set provide it else leave the space empty string
+    password: 'Sira211818',//password of mysql user that is if set provide it else leave the space empty string
     database: ''//name of database to use for the connection
 });
 
@@ -67,12 +67,12 @@ const tableName = `CREATE TABLE sample(
 
 
 app.get('/', (req, res) => {
-    mysqlConnection.query('CREATE DATABASE ayisah', (err, success) => {
+    mysqlConnection.query('CREATE DATABASE studentRecord', (err, success) => {
         if (err) {
             throw err.message
         }
         if (success) {
-            mysqlConnection.query('use ayisah',(err,success)=>{
+            mysqlConnection.query('use studentRecord',(err,success)=>{
                 if(err){
                     throw err.message
                 }
